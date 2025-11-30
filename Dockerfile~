@@ -1,0 +1,4 @@
+FROM openjdk:17-alpine3.15
+WORKDIR /app
+COPY target/*.jar app.jar
+CMD ["java", "-jar", "app.jar"]
